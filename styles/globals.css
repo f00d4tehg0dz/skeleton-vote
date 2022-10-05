@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import '../node_modules/@hawk-ui/table/dist/index.min.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  user-select: none;
+  color: #fff;
+  background-color: #161816;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-transform{
+  transform: rotateZ(-2.75787deg) scale(0.8);
+  border-radius: 3.5em;
+  background-clip: content-box;
+}
+
+.card-border{
+  box-shadow: 0 12.5px 100px -10px rgb(50 50 73 / 40%), 0 10px 10px -10px rgb(50 50 73 / 30%);
+}
+
+.card-smash:hover {
+  background-color: #058355;
+  color:white;
+}
+
+.card-pass:hover {
+  background-color: #961425;
+  color:white;
+}
+
+.card-buy:hover {
+  background-color: #00a82a;
+  color:white;
+}
+
+.card-smash{
+  display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 3px 5px 2px rgba(36, 216, 150 / 30%);
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #fff;
+    --bColor:  rgb(36, 216, 150);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0.25em;
+    width: 45%;
+    height: calc(1.5em + 5vh);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 1.25rem;
+    border: 4px solid var(--bColor);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--bColor);
+    -webkit-transition: color 250ms linear;
+    transition: color 250ms linear;
+    background-color: transparent;
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+.card-text-shadow {
+  text-shadow: 2px 1px 3px black;
+}
+
+.card-pass {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 3px 5px 2px rgb(255 105 135 / 30%);
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #fff;
+  --bColor: rgb(254, 107, 139);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25em;
+  width: 45%;
+  height: calc(1.5em + 5vh);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 1.25rem;
+  border: 4px solid rgb(254, 107, 139);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--bColor);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  background-color: transparent;
+}
+
+
+.card-buy {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 3px 5px 2px rgba(0, 255, 72, 0.3);
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #fff;
+  --bColor: rgb(5, 168, 54);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25em;
+  width: 45%;
+  height: calc(1.5em + 5vh);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 1.25rem;
+  border: 4px solid rgb(5, 168, 54);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--bColor);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 800px){
+.card-smash, .card-pass {
+    gap: 6px;
+    width: 250px;
+    height: 100px;
+    font-size: 2em;
+}
+}
+
+@media (min-width: 800px){
+  .card-smash, .card-pass >:not(style)+:not(style) {
+    margin: 0;
+    margin-left: 48px;
+}
+}

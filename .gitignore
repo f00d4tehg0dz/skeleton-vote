@@ -1,0 +1,12 @@
+node_modules
+.history
+.event
+.next
+yarn.lock
+package-lock.json
+.history/
+.next/
+yarn-error.log
+yarn.lock
+_static
+.env
